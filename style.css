@@ -1,0 +1,272 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f2ef;
+    color: #333;
+    margin: 0;
+}
+
+/* Navbar Styles */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 30px;
+}
+
+.search-bar {
+    flex-grow: 0;
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #555;
+    cursor: pointer;
+}
+
+.nav-item img {
+    width: 20px;
+    margin-bottom: 5px;
+}
+
+.nav-item.profile img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+
+/* Container Layout */
+.container {
+    display: flex;
+    gap: 20px;
+    margin: 70px auto;
+    max-width: 1400px;
+}
+
+/* Left Sidebar */
+.left-sidebar {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.analytics, .shortcuts {
+    margin-top: 20px;
+}
+
+.analytics h4, .shortcuts h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.analytics ul, .shortcuts ul {
+    list-style: none;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Feed Section */
+.feed {
+    flex: 2;
+}
+
+.post-box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.post-box img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.post-input {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.post {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.post-content {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Suggested Connections */
+.suggested-connections {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.suggested-connections h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.connection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.connection img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.connection button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #0073b1;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.connection button:hover {
+    background-color: #005f8c;
+}
+
+/* Right Sidebar */
+.right-sidebar {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.right-sidebar h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.right-sidebar ul {
+    list-style: none;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.ads img {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.ads p {
+    font-size: 14px;
+    color: #555;
+}
+
+.post-interactions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.post-interactions button {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #0073b1;
+    cursor: pointer;
+}
+
+.post-interactions button img {
+    width: 20px;
+    height: 20px;
+}
+
+.post-interactions button:hover {
+    text-decoration: underline;
+}
